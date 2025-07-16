@@ -2,18 +2,6 @@
 
 This repository contains a collection of three interconnected Solidity smart contracts that demonstrate fundamental concepts in smart contract development, including basic storage, inheritance, and factory patterns.
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Contracts](#contracts)
-  - [SimpleStorage](#simplestorage)
-  - [StorageExtra](#storageextra)
-  - [StorageFactory](#storagefactory)
-- [Getting Started](#getting-started)
-- [Usage Examples](#usage-examples)
-- [Development](#development)
-- [License](#license)
-
 ## 🔍 Overview
 
 This smart contract suite includes:
@@ -109,35 +97,6 @@ SimpleStorage[] public SSArray;
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Solidity compiler version `^0.8.7`
-- Development environment (Remix, Hardhat, or Foundry)
-
-### Installation
-
-1. **Clone the repository:**
-```
-git clone https://github.com/your-username/solidity-contract-suite.git
-cd solidity-contract-suite
-```
-
-2. **Compile the contracts:**
-```
-# Using Hardhat
-npx hardhat compile
-
-# Using Foundry
-forge build
-```
-
-3. **Deploy contracts:**
-```
-# Deploy to local network
-npx hardhat run scripts/deploy.js --network localhost
-```
-
 ## 💡 Usage Examples
 
 ### Basic SimpleStorage Usage
@@ -196,51 +155,6 @@ uint256 firstValue = factory.sfGet(0);  // Returns 100
 uint256 secondValue = factory.sfGet(1); // Returns 200
 ```
 
-## 🛠️ Development
-
-### Project Structure
-```
-.
-├── contracts/
-│   ├── SimpleStorage.sol
-│   ├── StorageExtra.sol
-│   └── StorageFactory.sol
-├── scripts/
-│   └── deploy.js
-├── test/
-│   └── StorageTest.js
-└── README.md
-```
-
-### Testing
-```
-# Run all tests
-npx hardhat test
-
-# Run specific test file
-npx hardhat test test/StorageTest.js
-```
-
-### Deployment Networks
-- **Local**: Hardhat Network
-- **Testnet**: Goerli, Sepolia
-- **Mainnet**: Ethereum Mainnet
-
-## 🔧 Configuration
-
-### Hardhat Configuration
-```
-// hardhat.config.js
-module.exports = {
-  solidity: "0.8.7",
-  networks: {
-    localhost: {
-      url: "http://127.0.0.1:8545"
-    }
-  }
-};
-```
-
 ## 📚 Key Concepts Demonstrated
 
 1. **Basic Storage**: Simple state variable management
@@ -262,18 +176,4 @@ module.exports = {
 
 This project is licensed under the MIT License - see the individual contract files for details.
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📞 Support
-
-For questions or support, please open an issue in the GitHub repository.
-
 ---
-
-**Happy Building!** 🚀
